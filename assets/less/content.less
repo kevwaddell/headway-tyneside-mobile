@@ -1,0 +1,190 @@
+.breadcrumbs {
+.bg-col(@blue-lt);
+padding: 10px 0px;	
+color: @wht;
+.font-size(1.6);
+.line-h(1.6);
+	i.fa-angle-right {
+	padding: 0px 10px;	
+	}
+	i.fa-home {
+	padding-left: 15px;	
+	}
+	a {
+	color: @wht;	
+		&:hover, &:active, &:focus {
+		color: @wht;
+		}
+	}
+}
+
+.tml {
+padding: 30px;
+.drop-shadow(0, 3px, 10px, 0.5);
+max-width: 380px;
+margin: auto;	
+}
+
+article.page-content {
+	margin: 0px;
+	min-height: 300px;
+	.bg-col(@wht);
+	
+	header.page-title {
+	.bg-col(@blue-lt);
+	padding: 10px 0px 15px 0px;
+	color: @wht;
+		h1 {
+		.font-size(2);
+		.line-h(2);
+		margin: 0px;
+		font-weight: 300;	
+		}	
+	}
+	
+	header.post-header {
+	padding-bottom: 10px;
+		h1 {
+		color: @blue;	
+		margin-top: 0px;
+		.font-size(2.5);
+		.line-h(3);	
+		}	
+		.article-info {
+		font-weight: 700;
+		color: @gray;
+			a {
+			color: @gray;	
+			}	
+		}	
+	}
+	
+	h2, h3, h4 {
+	color: @blue;	
+	margin-top: 0px;
+	}
+	
+	h2 {
+	.font-size(2.5);
+	.line-h(3);	
+	}
+	
+	h3 {
+	.font-size(2);
+	.line-h(2.5);	
+	color: @blue-lt;
+	}
+	
+	h4 {
+	.font-size(2);
+	.line-h(2.5);	
+	color: @blue-lt;
+	}
+	
+	p, ul, ol {
+	.font-size(1.6);
+	.line-h(2);	
+	margin-bottom: 15px;
+	color: @grayDk;
+		&:last-child {
+		margin-bottom: 0px;	
+		}
+	}
+	
+	.entry {
+	margin-top: 15px;	
+		img.alignleft, img.alignright, img.alignnone {	
+		padding: 10px;
+		border: @gray 1px solid;
+		}
+		
+		img.alignleft {
+		margin: 0px 20px 20px 0px;	
+		}
+		
+		img.alignright {
+		margin: 0px 0px 20px 20px;	
+		}
+		
+		img.alignnone {
+		margin-bottom: 20px;	
+		}
+		
+		img {
+		max-width: 100%;	
+		}
+		
+	}
+	
+	#map {
+	.h(20);	
+	margin-bottom: 5px;		
+	}
+	
+	figure.feat-img {
+	.animated;
+	.fadeInLeft;	
+	position: relative;
+		img {
+		display: block;
+		max-width: 100%;	
+		max-height: 250px;
+		border: 1px solid black;
+		margin-bottom: 15px;
+		}
+		.caption {
+		font-family: @serif-font;	
+		.font-size(1.4);
+		.line-h(1.8);
+		color: @grayDk;
+		margin-bottom: 15px;
+		}
+	}
+	
+	.table {
+	margin-top: 0px;	
+	.bordered;
+	}
+	
+	.extra-imgs {
+	padding: 15px;
+	background-color: @gray-lt;	
+		img {
+		margin-left: auto;
+		margin-right: auto;	
+		}
+		.caption {
+		.text-center;	
+		}
+	}
+
+	
+	.well {
+	border-color: @blue;
+	margin-top: 20px;
+		h3, h2 {
+		margin-top: 0px;	
+		color: @blue-lt;
+		}	
+	}
+}
+
+.post-paging {
+.font-size(2);
+.line-h(2);
+.text-center;
+padding: 20px 0px;
+border-top: 1px solid @gray;
+	a {
+	color: @blue;	
+		&.prev {
+		.pull-left;	
+		padding-left: 15px;
+		}
+	
+		&.next {
+		.pull-right;
+		padding-right: 15px;	
+		}
+	}
+}

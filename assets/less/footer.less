@@ -1,0 +1,59 @@
+.copyright {
+.bg-col(@blue);
+color: @wht;
+padding: 15px 15px 30px 15px;
+.text-center;
+height: 100%;
+.font-size(1.4);
+.line-h(1.6);
+}
+
+.site-footer {
+.bg-col(@blue);
+color: @wht;
+display: flex;
+flex-direction: row;
+flex-flow: row;
+overflow: visible;
+z-index: 2;
+border-top: 1px solid @wht;
+	a {
+	display: block;	
+	flex: 1;
+	.text-center; 
+	color: @wht;
+	text-decoration: none;
+	border-right: 1px solid @wht;
+		&:last-child {
+		border-right: none;	
+		}
+		i, span {
+		display: block;	
+		}
+		
+		i {
+		.bg-col(@blue-lt);
+		color: @blue;
+		.w(3);
+		.h(3);
+		.line-h(2.8);
+		.rounded(50%);
+		margin: -15px auto 5px auto;	
+		border: 1px solid @wht;
+		}
+		
+		span {
+		text-transform: uppercase;	
+		.font-size(1.2);
+		}
+		
+		&:hover, &:active, &:focus {
+		text-decoration: none;
+		color: @wht;
+			i {
+			.animated;
+			.bounce;	
+			}
+		}
+	}
+}
