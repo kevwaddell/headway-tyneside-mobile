@@ -157,6 +157,116 @@ background-color: @wht;
 			}
 		}
 	}
+	
+	&.downloads-list {
+		
+		a.download-link {
+		position: relative;
+		display: block;
+		.min-h(25);	
+		.bg-col(@blue);
+		margin: 15px 0px;
+		.bg-img('newsletter-cover-bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left top;
+		text-decoration: none;
+			&::before {
+			content: "\f0ab";
+			font-family: FontAwesome;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			.trans-bg(@blue; 0.8);	
+			color: @blue-lt;
+			.text-center;
+			.line-h(25);
+			.font-size(10);
+			.transition;
+			.opacity(0);
+			}
+			span {
+			display: block;
+			.text-uppercase;
+			.text-center;
+			color: @wht;
+			}
+			span.title {
+			.line-h(4);
+			.font-size(3);	
+			font-weight: bold;
+			padding-top: 170px;
+			}
+			
+			span.date {
+			.font-size(1.8);	
+			.line-h(1.8);
+			}
+			
+			&:active, &:focus {
+				&::before {
+				.opacity(1);	
+				}	
+			}
+		}	
+				
+		@media screen and (orientation: landscape) {
+		overflow: hidden;	
+		text-align: center;
+			.section-header {
+			text-align: left;	
+			}
+			a.download-link {
+			.min-h(20);
+			width: 40%;
+			margin: 15px;
+			display: inline-block;	
+				&::before {
+				.line-h(250);	
+				}
+				span.title {
+				padding-top: 120px;
+				}
+			}
+		}
+	}
+	
+	&.events-list {
+		.meeting-details {
+		.font-size(1.6);
+		.line-h(2);
+		margin-top: 30px;
+		margin-bottom: 15px;
+		.bg-col(@gray-lt);
+		padding: 15px;
+		
+			.meeting-img {
+			.h(12);
+			.w(12);
+			float: right;
+			//width: 100%;
+			//.rounded(50%);
+			.border-radius(0, 0, 50%, 0);
+			margin: -15px -15px 10px 10px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			//border: 1px solid black;	
+			}
+			
+			.title {
+			.font-size(1.8);
+			.text-uppercase;
+			font-weight: bold;	
+			}
+		
+			.venue, .desc, .title {
+			margin-bottom: 10px;	
+			}
+		}
+	}
 }
 
 #contact-section {

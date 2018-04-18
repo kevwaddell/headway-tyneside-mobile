@@ -441,6 +441,127 @@ section.page-section.profile-list .profile .biog p {
   font-size: 16px;
   line-height: 22px;
 }
+section.page-section.downloads-list a.download-link {
+  position: relative;
+  display: block;
+  min-height: 250px;
+  background-color: #193441;
+  margin: 15px 0px;
+  background-image: url(/wp-content/themes/headway-tyneside-desktop/assets/css/img/newsletter-cover-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  text-decoration: none;
+}
+section.page-section.downloads-list a.download-link::before {
+  content: "\f0ab";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #193441;
+  background-color: rgba(25, 52, 65, 0.8);
+  color: #3e606f;
+  text-align: center;
+  line-height: 250px;
+  font-size: 100px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+}
+section.page-section.downloads-list a.download-link span {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+section.page-section.downloads-list a.download-link span.title {
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 170px;
+}
+section.page-section.downloads-list a.download-link span.date {
+  font-size: 18px;
+  line-height: 18px;
+}
+section.page-section.downloads-list a.download-link:active::before,
+section.page-section.downloads-list a.download-link:focus::before {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+@media screen and (orientation: landscape) {
+  section.page-section.downloads-list {
+    overflow: hidden;
+    text-align: center;
+  }
+  section.page-section.downloads-list .section-header {
+    text-align: left;
+  }
+  section.page-section.downloads-list a.download-link {
+    min-height: 200px;
+    width: 40%;
+    margin: 15px;
+    display: inline-block;
+  }
+  section.page-section.downloads-list a.download-link::before {
+    line-height: 2500px;
+  }
+  section.page-section.downloads-list a.download-link span.title {
+    padding-top: 120px;
+  }
+}
+section.page-section.events-list .meeting-details {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  background-color: #dddcdc;
+  padding: 15px;
+}
+section.page-section.events-list .meeting-details .meeting-img {
+  height: 120px;
+  width: 120px;
+  float: right;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 50%;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 50%;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: -15px -15px 10px 10px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.page-section.events-list .meeting-details .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.page-section.events-list .meeting-details .venue,
+section.page-section.events-list .meeting-details .desc,
+section.page-section.events-list .meeting-details .title {
+  margin-bottom: 10px;
+}
 #contact-section {
   background-color: white;
   padding: 15px;
