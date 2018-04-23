@@ -557,9 +557,16 @@ section.page-section.events-list .meeting-details .title {
   text-transform: uppercase;
   font-weight: bold;
 }
+section.page-section.events-list .meeting-details .frequency {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #918F8F;
+}
 section.page-section.events-list .meeting-details .venue,
 section.page-section.events-list .meeting-details .desc,
-section.page-section.events-list .meeting-details .title {
+section.page-section.events-list .meeting-details .frequency {
   margin-bottom: 10px;
 }
 #contact-section {
